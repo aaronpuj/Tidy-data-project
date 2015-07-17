@@ -1,5 +1,5 @@
 # Tidy-data-project
-## This repo contains the run_analysis.R that produces the Tidy data.txt file
+## This repo contains the run_analysis.R that produces the Tidy data.txt file and a code book that describes the new variables
 ## The script works by:
 ## 1- converting source .txt files to tables
 ## 2- merging observation tables & extract only mean and std dev measurments (see steps 1 & 2 of course project)
