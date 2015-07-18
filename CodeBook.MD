@@ -60,4 +60,4 @@
 
 # Tidy data updates
 
-## All variables that appear in 'Tiday data.R' are the averages of each variable for each activity and each subject.
+## All variables that appear in 'Tidy data.txt' are the averages of each variable for each activity and each subject.
