@@ -57,3 +57,7 @@
 ### tBodyGyroJerkMean
 
 ## The complete list of variables of each feature vector is available in 'features.txt'
+
+# Tidy data updates
+
+## All variables that appear in 'Tiday data.R' are the averages of each variable for each activity and each subject.
