@@ -34,9 +34,9 @@ data <- cbind(subs,act,means,stds) ## combined data frame
 ## create independent tidy data set with the average of each variable for each activity and each subject (step 5)
 mean_names <- names(means)
 std_names <- names(stds)
-measure_names <- c(mean_names, std_names)
+measure_names <- c(mean_names, std_names) ## vector containing all column names of variables to be averaged
 
-library(reshape2)
-dataMelt <- melt(data, id = c("Subject","Activity"), measure.vars = measure_names)
-answer <- dcast(dataMelt, Subject + Activity ~ variable, mean)
-write.table(answer, file = "Tidy data.txt",row.name=FALSE)  
+library(reshape2) ## initalizes library that allows for melt() and dcast()
+dataMelt <- melt(data, id = c("Subject","Activity"), measure.vars = measure_names) 
+answer <- dcast(dataMelt, Subject + Activity ~ variable, mean) ## creates data frame with the average of each variable for each activity and each subject
+write.table(answer, file = "Tidy data.txt",row.name=FALSE)
